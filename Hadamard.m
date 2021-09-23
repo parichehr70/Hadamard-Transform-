@@ -23,7 +23,7 @@ LOW1 = (LOW1-min(LOW1(:)))/(max(LOW1(:)-min(LOW1(:))));
 LOW2 = 1/(2*pi*5^2)*exp(-(e.^2+f.^2)/2*5^2);       % sigma=5
 LOW2 = LOW2(257:512,257:512);
 LOW2 = (LOW2-min(LOW2(:)))/(max(LOW2(:)-min(LOW2(:))));
-LOW3 = 1/(2*pi*0.1^2)*exp(-(e.^2+f.^2)/2*0.1^2);       % sigma=0.1
+LOW3 = 1/(2*pi*0.1^2)*exp(-(e.^2+f.^2)/2*0.1^2);      % sigma=0.1
 LOW3 = LOW3(257:512,257:512);
 LOW3 = (LOW3-min(LOW3(:)))/(max(LOW3(:)-min(LOW3(:))));
 HI1 = 1 - LOW1;HI1 = (HI1-min(HI1(:)))/(max(HI1(:)-min(HI1(:))));
